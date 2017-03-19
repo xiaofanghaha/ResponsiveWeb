@@ -25,10 +25,6 @@ li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
 /* ============
     工具样式
    ============ */
@@ -62,11 +58,11 @@ a {
     text-align: left !important;
 }
 
-text-right {
+.text-right {
     text-align: right !important;
 }
 
-text-center {
+.text-center {
     text-align: center !important;
 }
 
@@ -90,6 +86,24 @@ text-center {
 /* ============
    自定义页面样式
    ============ */
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*网站头部*/
+
 header {
     width: 100%;
 }
@@ -116,6 +130,7 @@ header .top ul li {
 
 header .top ul li + li {
     border-left: 1px solid #999;
+    margin-left: -3px;
 }
 
 header .top ul li a {
@@ -124,9 +139,13 @@ header .top ul li a {
     color: #fff;
 }
 
+header .main {
+    padding: 0;
+}
+
 header .main .brand {
     float: left;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 0;
 }
 
 header .main ul {
@@ -140,16 +159,42 @@ header .main ul li {
 
 header .main ul li a {
     display: inline-block;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
     line-height: 5.5rem;
     font-size: 1.6rem;
     font-weight: bold;
     color: #7c7a65;
+    text-decoration: none;
 }
+
+header .main ul li a:hover,
+header .main ul li a.active {
+    color: #ffb300;
+    background-color: #f8f6f1;
+}
+
+/*网站主要内容*/
 
 .container {
     width: 100%;
+}
 
+/*交易信息*/
+.transaction {
+    width: 100%;
+    background-color: #7c7365;
+}
+
+.trans-content {
+    width: 90%;
+}
+
+.trans-data {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
 
 footer {
