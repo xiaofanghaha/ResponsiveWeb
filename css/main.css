@@ -186,15 +186,59 @@ header .main ul li a.active {
 }
 
 .trans-content {
-    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
 }
 
 .trans-data {
+    float: left;
+    padding: 1rem;
     text-align: left;
 }
 
-.text-right {
+.trans-data span {
+    display: inline-block;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.trans-data span.trans-money {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    color: #ff9900;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 2px 1px #333 inset;
+}
+
+.trans-report {
     text-align: right;
+}
+
+.trans-report a {
+    display: inline-block;
+    padding: 1rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+/* 平台特点 */
+.feature {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.feature .item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: calc(33.33333333% - 1.5rem);
+}
+
+.feature .item + .item {
+    margin-left: 1.5rem;
 }
 
 footer {
