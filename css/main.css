@@ -228,13 +228,18 @@ header .main ul li a.active {
 /* 平台特点 */
 .feature {
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
+    font-size: 0;
 }
 
 .feature .item {
     box-sizing: border-box;
     display: inline-block;
-    width: calc(33.33333333% - 1.5rem);
+    width: calc(33.33333333% - 1rem);
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
 }
 
 .feature .item + .item {
