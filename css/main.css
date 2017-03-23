@@ -246,6 +246,25 @@ header .main ul li a.active {
     margin-left: 1.5rem;
 }
 
+.feature .item h3{
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    font-size: 3.3rem;
+    text-align: center;
+    color: #ff9900;
+}
+
+.feature .item p{
+    display: inline-block;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
 footer {
     width: 100%;
 }
